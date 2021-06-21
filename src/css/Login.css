@@ -1,0 +1,25 @@
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 18%);
+    padding-bottom: 10%;
+    background-color: lightgoldenrodyellow;
+}
+
+.form {
+    width:50vw;
+    height: min-content;
+}
+.anticon{
+    margin-left: 20px;
+}
+.ant-select-selection-placeholder,  .ant-select-selection-item{
+    margin-right: 20px;    
+}
+input.label{
+    border: none;
+    color: rgb(0 0 0) !important;
+    background-color: transparent !important;
+    cursor: default !important;
+}

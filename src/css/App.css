@@ -1,0 +1,57 @@
+.homeContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgoldenrodyellow;
+  height: calc(100vh - 18%);
+  padding-bottom: 10%;
+}
+
+.homeContainer>h1{
+  font-size: 3rem;
+}
+
+.tableContainer{
+  /* flex-direction: column; */
+  overflow-y: auto;
+  height: calc(100vh - 18%);
+  display: flex;
+  align-items: center;
+  width: 70vw;
+  flex-direction: column;
+  margin: auto;
+}
+
+.table{
+  width: 100%;
+}
+
+.ant-table-content{
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+}
+
+.ant-table-container{
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  text-align: center;
+}
+/*.candyListBtn{
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+.candyListBtn button{
+  background-color: #19160296;
+  border-color: none;
+  box-shadow: none;
+}
+.candyListBtn>button{
+  margin-right: 20px;
+}*/
+
+
+

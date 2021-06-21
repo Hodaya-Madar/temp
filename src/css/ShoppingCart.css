@@ -1,0 +1,24 @@
+.cart{
+    fontSize: 5px;
+}
+
+.shop-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.ant-card.ant-card-bordered{
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.anticon{
+    margin-left: 0px;
+    padding-right: 5px;
+}
+.ant-btn.btn-cart {
+    margin-left: 30px;
+    margin-bottom: 10px;
+    padding: 4px;
+}
+.ant-btn.btn-cart.disable{
+    pointer-events: none;
+}
