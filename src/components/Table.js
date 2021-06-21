@@ -1,22 +1,16 @@
 import '../css/App.css';
 import { Table, Space} from 'antd';
 import { useDispatch, useSelector } from "react-redux";
-import EMail from '../components/EMail';
-import Phone from '../components/Phone';
+
 import { useState } from 'react';
 
-function JsonTable() {
+function TableData() {
 
     const [selectedRow, setSelectedRow] = useState(null);
     const jsonData = useSelector(state => state.reducer1.dataJson);
     const titleskeys = jsonData.map(obj => Object.keys(obj));
     const titles = new Set(titleskeys.flat());
-    const compArray = {
-        'E-Mail' : EMail,
-        'Phone' : Phone,
-        'SMS' : ''
-    };
-    let InfoComponent = selectedRow ? compArray[selectedRow.EventType.replace(/ /g,'')] : '';
+
 
     const columns = [];
     titles.forEach(title => {
@@ -44,11 +38,8 @@ function JsonTable() {
                         },
                       })}
             />   
-            <h1>Summery:</h1> 
-            <div>count: {jsonData.length}</div>
-            {InfoComponent && <InfoComponent row={selectedRow}/>} 
         </div>
     );
 }
 
-export default JsonTable;
+export default TableData;
